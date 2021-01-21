@@ -1,6 +1,17 @@
-See a [hosted version](https://andyfen.github.io/codesandbox/) of the sample or fork a copy on [codesandbox.io](https://githubbox.com/andyfen/codesandbox/tree/master)
+See a [hosted version](https://demo-sofort-js-sdk.herokuapp.com/) of the sample
 
 
+### How to run locally
 
+Copy the .env.example file into a file named .env
 
-[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox)](https://githubbox.com/andyfen/codesandbox/tree/master)
+```
+cp .env.example .env
+```
+
+and configuring your .env config file with your Paypal API keys.
+
+1. Clone the repo  `git clone git@github.com:paypal-examples/sofort-payment.git`
+2. Run `npm install`
+3. Run `npm run dev`
+4. Navigate to `http://localhost:8080/`
