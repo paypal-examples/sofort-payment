@@ -1,4 +1,4 @@
-See a [hosted version](https://demo-sofort-js-sdk.herokuapp.com/) of the sample
+See a [hosted version](https://sofort-js-sdk.herokuapp.com/) of the sample
 
 
 ### How to run locally
