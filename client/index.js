@@ -31,7 +31,7 @@ const order = {
     {
       amount: {
         currency_code: 'EUR',
-        value: '49.11',
+        value: '99.99',
       },
     },
   ],
@@ -51,18 +51,15 @@ paypal
 paypal
   .Buttons({
     fundingSource: paypal.FUNDING.PAYPAL,
-
     style: {
       label: "pay",
       color: "silver",
     },
-
     createOrder(data, actions) {
       return actions.order.create(order)
     },
-
     onApprove(data, actions) {
-      return actions.order.capture().then(function(details) {
+      return actions.order.capture().then((details) => {
         alert(`Transaction completed by ${details.payer.name.given_name}!`)
       })
     },
