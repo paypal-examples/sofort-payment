@@ -1,3 +1,13 @@
+# Paying with Sofort or Paypal on the web
+
+<p>
+<img src="https://www.paypalobjects.com/images/checkout/latinum/Altpay_logo_sofort.svg" alt="Sofort Logo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" width="90px" alt="Paypal Logo">
+</p>
+
+This integration uses the JavaScript SDK to accept Sofort of Paypal payments on the web
+
+
 See a [hosted version](https://sofort-js-sdk.herokuapp.com/) of the sample
 
 

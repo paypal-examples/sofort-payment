@@ -74,7 +74,7 @@ paypal
   .render('#sofort-mark')
 
 paypal
-  .Fields({
+  .PaymentFields({
     fundingSource: paypal.FUNDING.SOFORT,
     style,
   })
@@ -83,7 +83,6 @@ paypal
 paypal
   .Buttons({
     fundingSource: paypal.FUNDING.SOFORT,
-    upgradeLSAT: true,
     style: {
       label: 'pay',
     },
@@ -111,7 +110,9 @@ paypal
   })
   .render('#sofort-btn')
 
-
+document.body.querySelector('#sofort-container').style.display = 'none'
+document.getElementById('sofort-btn').style.display = 'none'
+  
 // Listen for changes to the radio buttons
 document.querySelectorAll('input[name=payment-option]').forEach(el => {
   // handle button toggles
@@ -137,5 +138,3 @@ document.querySelectorAll('input[name=payment-option]').forEach(el => {
   })
 })
 
-document.body.querySelector('#sofort-container').style.display = 'none'
-document.getElementById('sofort-btn').style.display = 'none'
